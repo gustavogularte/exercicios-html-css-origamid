@@ -24,7 +24,13 @@ nav li {
   text-transform: uppercase;
   background-color: white;
   padding: 12px 24px;
+  border: 2px solid transparent;
   border-radius: 4px;
+}
+
+nav li:hover {
+  border-color: #ee2211;
+  cursor: pointer;
 }
 
 main {
@@ -76,6 +82,10 @@ a {
   border-radius: 4px;
 }
 
+a:hover {
+  background-color: #b91709;
+}
+
 h2 {
   font-size: 64px;
   color: #c6c6c6;
@@ -90,12 +100,24 @@ h2 {
 
 .vantagens ul {
   list-style: none;
-  position: relative;
+  padding: 0;
 }
 
-.vantagens img {
-  position: absolute;
-  left: 5px;
+.vantagens h3 {
+  display: flex;
+  gap: 20px;
+}
+
+.vantagens li:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.vantagens li:hover {
+  border-left: 4px solid #ee2211;
+}
+
+.vantagens li p {
+  padding-left: 44px;
 }
 
 footer {
